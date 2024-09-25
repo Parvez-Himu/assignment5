@@ -19,14 +19,14 @@ historyButton.addEventListener('click', function () {
 })
 
 
-// Common Function 1 (Challenge Part)
+// Common Function 1 
 function handleDonationValueById(id) {
     const donationValue = document.getElementById(id).value;
     const donationNumber = Number(donationValue);
     return donationNumber
 }
 
-// Common Function 2 (Challenge Part)
+// Common Function 2 
 function handleDonationAmountById(id) {
     const totalDonationAmount = document.getElementById(id).innerText;
     const totalDonationNumber = Number(totalDonationAmount);

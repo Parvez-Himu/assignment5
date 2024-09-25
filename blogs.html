@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donation for Bangladeshi Poor flood affected people</title>
+    <!-- adding a favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/donate-fav.webp">
+    <!-- adding google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- adding fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/105c77726f.js" crossorigin="anonymous"></script>
+    <!-- Adding Tailwind CSS and daisy-Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Configuration of TailwindCSS  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#22f04b',
+                        secondary: '#8707b5',
+                        headColor: '#f2f1e6',
+                        custom: 'rgb(115, 115, 115)',
+                        bodyColor: 'rgb(244, 244, 244)',
+                        light: '#737373',
+                        dark: '#494949',
+                        header: 'rgb(249, 247, 243)',
+                        btnPrimary: 'rgba(171, 239, 95, 0.5)',
+                        historyCl: 'rgba(180, 50, 97, 0.28)',
+                        red: '#FF0000',
+
+
+                    },
+                    fontFamily: {
+                        Lexend: "Lexend",
+                    },
+                },
+            },
+        }
+    </script>
+
+
+</head>
+
+<body class="font-Lexend">
+    <!-- header Container Start -->
+    <header class="border-b pb-4 sticky top-0 backdrop-blur-sm z-10 ">
+        <!-- nav  section start -->
+        <nav class="py-6 bg-headColor">
+            <div class="grid grid-cols-2 md:grid-cols-3 w-11/12 mx-auto">
+                <!-- medium device -->
+                <div class="hidden  md:flex justify-start items-center">
+                    <div class=" md:block tooltip tooltip-bottom" data-tip="Blog">
+                        <button
+                            class="home-button downUp font-semibold px-4 py-2 rounded-md bg-primary shadow">Home</button>
+                    </div>
+                </div>
+                <!-- nav middle -->
+                <div class="flex items-center justify-start md:justify-center gap-2">
+                    <!-- menu icon -->
+                    <div class=" md:hidden relative">
+                        <div class="tooltip tooltip-bottom" data-tip="Menu">
+                            <button id="mobile-icon"
+                                class="downUp bg-white p-1 w-9 h-9 flex items-center justify-center rounded-full"><i
+                                    class="fa-solid fa-bars text-xl "></i></button>
+                        </div>
+                        <div id="mobile-menu" class="absolute top-16 hidden">
+                            <ul class="bg-navBgColor shadow-lg">
+                                <li class=" home-button p-2 border-b-2  font-semibold w-full hover:bg-primary hover:text-white ">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="p-2 border-b-2  font-semibold w-full hover:bg-primary hover:text-white ">
+                                    <a href="#">Donation</a>
+                                </li>
+                                <li class="p-2 border-b-2  font-semibold w-full hover:bg-primary hover:text-white ">
+                                    <a href="#">History</a>
+                                </li>
+                                <li class="p-2   font-semibold w-full hover:bg-primary hover:text-white "><a
+                                        href="#">Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- donation logo -->
+                    <div class="flex items-center gap-2 ">
+                        <img src="./assets/logo.png" alt="logo">
+                        <h3 class="font-extrabold text-lg">Donate Bangladesh</h3>
+                    </div>
+                </div>
+                <!-- nav right  -->
+                <div class="flex items-center justify-end font-bold cursor-pointer ">
+                    <!-- Total balance -->
+                    <div class="tooltip tooltip-bottom flex items-center gap-1" data-tip="Account Balance">
+                        <img src="./assets/coin.png" alt="coin">
+                        <span id="blog-account">10000</span>
+                        <span>USD</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav  section end -->
+
+        <!-- donation & history tab -->
+        <div class="flex justify-center gap-6 mt-8">
+            <!-- donation -->
+            <div>
+                <button id="donate-button"
+                    class="downUp font-semibold px-4 py-2 border  rounded-md bg-primary  shadow">Donation</button>
+            </div>
+            <!-- history -->
+            <div>
+                <button id="history-button"
+                    class="downUp font-semibold px-4 py-2 rounded-md border  shadow bg-historyCl">History</button>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- header Container End -->
+
+    <!-- main section Start -->
+    <main class="w-11/12 mx-auto mt-10">
+        <section id="faq">
+            <h2 class="font-semibold text-3xl text-black mb-10">Important FAQ</h2>
+            <div class="collapse collapse-arrow bg-slate-50 border border-gray-200 rounded-lg py-3">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-500">The Document Object Model (DOM) is a programming interface for web
+                        documents. It represents the structure of a web page as a tree of objects, where each node in
+                        the tree is an element of the HTML or XML document, such as headings, paragraphs, and images.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-slate-50 border border-gray-200 rounded-lg my-4 py-3">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-500">In JavaScript, there are several methods to select elements from the DOM,
+                        each with different purposes and use cases. Here are the most common ones:
+                        <span>getElementById()</span>
+                        <span>getElementsByClassName()</span>
+                        <span>getElementsByTagName()</span>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-slate-50 border border-gray-200 rounded-lg my-4  py-3">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-500">Event delegation is a technique in the context of the DOM that allows you
+                        to handle events efficiently by leveraging the concept of event bubbling. Instead of attaching
+                        event listeners to many individual child elements, you attach a single event listener to a
+                        common parent element. This parent element listens for events from its children as they bubble
+                        up the DOM hierarchy.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-slate-50 border border-gray-200 rounded-lg my-4 py-3">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-500">In the DOM, you can easily manipulate an element's attributes (such as id,
+                        src, href, etc) and styles (CSS properties) using JavaScript. Below is an overview of how to do
+                        this.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- main section End -->
+
+    <!-- Custom Script -->
+
+    <script src="./JS/index.js"> </script>
+
+    <script src="./JS/utilities.js"></script>
+
+</body>
+
+</html>
